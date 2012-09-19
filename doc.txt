@@ -1,0 +1,28 @@
+
+Algorithm:
+ A-star search algorithm is used for searching a path from start to goal state. 
+A_Star_Search class does tree search and each node in 
+the tree is represented by 
+Node class. Each Node class contains one State object. State class contains 
+information specific to the problem domain. 
+Adm_Word_Trans_Heuristic class contains 
+a heuristic function which estimates the number of steps necessary to reach the 
+goal state from the current state.
+
+Data structure for dictionary:
+ An array of vectors (of String) is used for storing words in dictionary. Words 
+with length x are stored in x-th element of the array. This way we can easily 
+access words with certain length. We know that successor words are either words 
+with the same length or those with length one more or less. Candidates for successor
+words can be accessed faster.
+
+Classes generic to the problem domain are:
+  - A_Star_Search
+  - Node
+  - Heuristic (interface)
+
+Classes specific to the problem domains are:
+  - Adm_Word_Trans_Heuristic
+  - Input_Handler
+  - State
+  - Main
